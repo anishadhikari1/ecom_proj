@@ -87,8 +87,8 @@
                     <textarea class="form-control" name="pro_info" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Categories_Id</label>
-                    <input type="text" name="category_id" class="form-control" placeholder="Product Name">
+                {{Form::label('category_id', 'Categories')}}
+                {{Form::select('category_id',$categories, null,['class'=>'form-control','placeholder'=>'SelectCategory'])}}
                 </div>
                  
                 <div class="form-group">

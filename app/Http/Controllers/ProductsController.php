@@ -47,6 +47,7 @@ class ProductsController extends Controller
         Product::create($formInput);
         return redirect()->back();
     }
+    
     public function show($id)
     {
         $products = Product::findOrFail($id);
