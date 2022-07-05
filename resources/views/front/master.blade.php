@@ -11,6 +11,11 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('dist/css/album.css')}}">
+    <link rel="stylesheet" href="{{asset('dist/css/carousel.css')}}">
+    <link rel="stylesheet" href="{{asset('dist/css/custom.css')}}">
+    <link rel="stylesheet" href="{{asset('dist/css/main.css')}}">
+
 
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
