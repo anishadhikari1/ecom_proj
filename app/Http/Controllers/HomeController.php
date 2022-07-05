@@ -75,7 +75,7 @@ public function removeWishList($id){
    
 public function SelectSize(Request $request)
 {
-    echo $request->proDum;
+    $proDum =  $request->proDum;
     $size = $request->size;
 
     $s_price = DB::table('products_properties')->where('pro_id',$proDum)->where('size',$size)->get();
