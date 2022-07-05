@@ -49,7 +49,7 @@
           
         </ul>
         
-        <li class="list-inline-item"><a href="{{url('/cart')}}"><i class="fa fa-shopping-cart">View Cart({{Cart::count()}}) $({{Cart::total()}})</i> </a></li>
+        <li class="list-inline-item"><a href="{{url('/cart')}}"><i class="fa fa-shopping-cart">View Cart({{Cart::count()}}) रू({{Cart::total()}})</i> </a></li>
 
         <!-- Search Product -->
      

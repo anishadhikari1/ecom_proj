@@ -45,20 +45,25 @@
                
                             
                 <div class="form-group">
-                 {!! Form::label('pro_name', 'Name:') !!}
-                 {!! Form::text('pro_name', null, ['class'=>'form-control'])!!}
+                  <label for="pro_name">Name:</label>
+                  <input class="form-control" type="text" name="pro_name" value="{{$Products->pro_name}}">
+                
                </div>
 
 
                <div class="form-group">
-                 {!! Form::label('pro_price', 'Pro Price:') !!}
-                 {!! Form::text('pro_price', null, ['class'=>'form-control'])!!}
+               <label for="pro_price">Pro Price:</label>
+                  <input class="form-control" type="text" name="pro_price" value="{{$Products->pro_price}}">
+                
+           
                </div>
                 
 
                 <div class="form-group">
-                 {!! Form::label('pro_code', 'Pro Code:') !!}
-                 {!! Form::text('pro_code', null, ['class'=>'form-control'])!!}
+                <label for="pro_code">Pro Code:</label>
+                  <input class="form-control" type="text" name="pro_code" value="{{$Products->pro_code}}">
+                
+               
                </div>
 
 
@@ -69,14 +74,17 @@
 
                 
                 <div class="form-group">
-                 {!! Form::label('spl_price', 'Spl Price:') !!}
-                 {!! Form::text('spl_price', null, ['class'=>'form-control'])!!}
+                <label for="spl_price">Spl Price: </label>
+                  <input class="form-control" type="text" name="spl_price" value="{{$Products->spl_price}}">
+            
                </div>
 
 
                <div class="form-group">
-                 {!! Form::label('pro_info', 'Pro Info:') !!}
-                 {!! Form::text('pro_info', null, ['class'=>'form-control'])!!}
+               <label for="pro_info">Pro Info:</label>
+                  <input class="form-control" type="text" name="pro_info" value="{{$Products->pro_info}}">
+                
+                
                </div>
 
 

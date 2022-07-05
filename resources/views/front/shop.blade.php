@@ -6,12 +6,15 @@
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
+
         <div class="carousel-inner">
+
           <div class="carousel-item active">
             <img class="first-slide" src="{{URL::asset('dist/img/create-section1.jpg')}}" alt="First slide">
             <div class="container">
@@ -56,48 +59,30 @@
 
 
 
-   
+  
+      <div class="album text-muted">
+         <div class="container">
 
-      <div class="album text-muted"></div>
-        <div class="container">
-
-<h3 class="test-center">
-
-<?php 
-if(isset($msg)) {echo $msg; } 
-else { 
-   ?>
-    Featured Item
-     <?php } ?>
-
-</h3>
+<h3 class="test-center"><?php if(isset($msg)) {echo $msg; } else {  ?> Featured Item <?php } ?> </h3>
 
           <div class="row">
+
             @foreach($products as $product)
-
             <div class="card" style="width: 30rem height=20rem">
-              
-                <img class="card-img" src="images/{{($product->image) }}" alt="Card image cap">
-               
-                <div class="card-body">
-                  <p id="price">
-
-                 
-              
-          
+                <img class="card-img" src="images/{{($product->image) }}" alt="Card image cap">               
+                <div class="card-body">            
                 <p class="card-text">{{$product->pro_name}}</p>
-
+                </div>
+                <p class="">
                 @if($product->splprice==0)
                 <div class="d-flex justify-content-between align-items-center">
-                  <p class="card-text">${{$product->pro_price}}</p>
-                  <p class="card-text"></p>
+                  <p class="card-text">रू{{$product->pro_price}}</p>                 
                 </div>
                 @else
                 <div class="d-flex justify-content-between align-items-center">
                   <p class="card-texttext-decoration:lin-through; color:#333">
-                    ${{$product->pro_price}}</p>
+                  रू{{$product->pro_price}}</p>
                     <img src="{{url::asset('dist/images/shop/sale.png')}}" alt="...." style="width: 60px;">
-                  <p class="card-text"></p>
                 </div>
                 @endif
                 </p>
@@ -111,15 +96,11 @@ else {
                   <a href="{{url('/cart/addItem')}}/{{$product->id}}" class="add-to-cart">Add To Cart <i class="fa fa-shopping-cart"></i> </a>
                 </button>
                 </div>
-                </div>
-        
-             
             
-            </div>
             @endforeach
             
           
-
+            </div>
 
            
           </div>
